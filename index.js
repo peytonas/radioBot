@@ -32,7 +32,7 @@ radiobot.on("message", async (message) => {
   // we ignore it
   if (!message.guild) return;
 
-  if (message.content === `${prefix}` + "play") {
+  if (message.content === "!play") {
     let i = getRandomInt(8);
     // Only try to join the sender's voice channel if they are in one themselves
     if (message.member.voice.channel) {
@@ -43,7 +43,7 @@ radiobot.on("message", async (message) => {
     }
   }
 
-  if (message.content === `${prefix}` + "play 1") {
+  if (message.content === "!play 1") {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
       connection.play(ytdl(ytpl[0], { filter: "audioonly" }));
@@ -52,7 +52,7 @@ radiobot.on("message", async (message) => {
     }
   }
 
-  if (message.content === `${prefix}` + "play 2") {
+  if (message.content === "!play 2") {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
       connection.play(ytdl(ytpl[1], { filter: "audioonly" }));
@@ -61,7 +61,7 @@ radiobot.on("message", async (message) => {
     }
   }
 
-  if (message.content === `${prefix}` + "play 3") {
+  if (message.content === "!play 3") {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
       connection.play(ytdl(ytpl[2], { filter: "audioonly" }));
@@ -70,7 +70,7 @@ radiobot.on("message", async (message) => {
     }
   }
 
-  if (message.content === `${prefix}` + "play 4") {
+  if (message.content === "!play 4") {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
       connection.play(ytdl(ytpl[3], { filter: "audioonly" }));
@@ -79,7 +79,7 @@ radiobot.on("message", async (message) => {
     }
   }
 
-  if (message.content === `${prefix}` + "play 5") {
+  if (message.content === "!play 5") {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
       connection.play(ytdl(ytpl[4], { filter: "audioonly" }));
@@ -88,7 +88,7 @@ radiobot.on("message", async (message) => {
     }
   }
 
-  if (message.content === `${prefix}` + "play 6") {
+  if (message.content === "!play 6") {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
       connection.play(ytdl(ytpl[5], { filter: "audioonly" }));
@@ -97,7 +97,7 @@ radiobot.on("message", async (message) => {
     }
   }
 
-  if (message.content === `${prefix}` + "play 7") {
+  if (message.content === "!play 7") {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
       connection.play(ytdl(ytpl[6], { filter: "audioonly" }));
@@ -106,7 +106,7 @@ radiobot.on("message", async (message) => {
     }
   }
 
-  if (message.content === `${prefix}` + "play 8") {
+  if (message.content === "!play 8") {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
       connection.play(ytdl(ytpl[7], { filter: "audioonly" }));
@@ -115,7 +115,7 @@ radiobot.on("message", async (message) => {
     }
   }
 
-  if (message.content === `${prefix}` + "play 9") {
+  if (message.content === "!play 9") {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
       connection.play(ytdl(ytpl[8], { filter: "audioonly" }));
@@ -124,7 +124,7 @@ radiobot.on("message", async (message) => {
     }
   }
 
-  if (message.content === `${prefix}` + "play 10") {
+  if (message.content === "!play 10") {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
       connection.play(ytdl(ytpl[9], { filter: "audioonly" }));
@@ -138,13 +138,13 @@ radiobot.on("message", async (message) => {
   if (message.author.bot) return;
 
   if (
-    message.content === `${prefix}` + "Music" ||
-    message.content === `${prefix}` + "music"
+    message.content === "!Music" ||
+    message.content === "!music"
   ) {
     message.channel.send(
       `
       Music Options:
-      !play: If user is in a voice channel, Chalooby-Bot will stream a random playlist from the following options.
+      !play: If user is in a voice channel, Chalooby-Bot will stream one of the playlists from the following options.
       !play 1: Chalooby-Bot will stream a 90's playlist.
       !play 2: Chalooby-Bot will stream a Hip-Hop playlist.
       !play 3: Chalooby-Bot will stream a 90's Rap playlist.
