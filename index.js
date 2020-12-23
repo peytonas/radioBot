@@ -10,7 +10,7 @@ radiobot.on("ready", async () => {
   radiobot.user.setActivity("Brody...", { type: "WATCHING" });
 });
 
-bot.on("message", async (message) => {
+radiobot.on("message", async (message) => {
   // Voice only works in guilds, if the message does not come from a guild,
   // we ignore it
   if (!message.guild) return;
@@ -117,7 +117,7 @@ bot.on("message", async (message) => {
   }
 });
 
-bot.on("message", async (message) => {
+radiobot.on("message", async (message) => {
   if (message.author.bot) return;
 
   if (

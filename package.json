@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@discordjs/opus": "^0.3.2",
+    "@discordjs/opus": "github:discordjs/opus",
     "discord.js": "^12.5.1",
     "discord.js-commando": "^0.10.0",
+    "dotenv": "^8.2.0",
     "ffmpeg-static": "^4.2.7",
     "ytdl-core": "^2.1.7"
   },
