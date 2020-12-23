@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const radiobot = new Discord.Client();
 const ytdl = require("ytdl-core");
 
+const token = process.env.BOT_TOKEN;
 const queue = new Map();
 
 radiobot.once("ready", () => {
